@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|c:\\users\\martyiani\\source\\repos\\todolist v.2\\todolist v.2\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|solutionrelative:todolist v.2\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|c:\\users\\martyiani\\source\\repos\\todolist v.2\\todolist v.2\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|solutionrelative:todolist v.2\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|c:\\users\\martyiani\\source\\repos\\todolist v.2\\todolist v.2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|solutionrelative:todolist v.2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|c:\\users\\martyiani\\source\\repos\\todolist v.2\\todolist v.2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|solutionrelative:todolist v.2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|c:\\users\\martyiani\\source\\repos\\todolist v.2\\todolist v.2\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|solutionrelative:todolist v.2\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|c:\\users\\martyiani\\source\\repos\\todolist v.2\\todolist v.2\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|solutionrelative:todolist v.2\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|c:\\users\\martyiani\\source\\repos\\todolist v.2\\todolist v.2\\pages\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|solutionrelative:todolist v.2\\pages\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|c:\\users\\martyiani\\source\\repos\\todolist v.2\\todolist v.2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5E053248-AE6E-43C8-85DA-3A04B97D28DD}|TodoList v.2\\TodoList v.2.csproj|solutionrelative:todolist v.2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "TodoList v.2\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "TodoList v.2\\Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T11:54:36.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "TodoList v.2\\Pages\\_Host.cshtml",
+              "ToolTip": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "TodoList v.2\\Pages\\_Host.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T11:53:06.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Pages\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TodoList v.2\\Pages\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Pages\\_Layout.cshtml",
+              "RelativeToolTip": "TodoList v.2\\Pages\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T11:52:59.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\appsettings.json",
+              "RelativeDocumentMoniker": "TodoList v.2\\appsettings.json",
+              "ToolTip": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\appsettings.json",
+              "RelativeToolTip": "TodoList v.2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-19T08:06:42.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Program.cs",
+              "RelativeDocumentMoniker": "TodoList v.2\\Program.cs",
+              "ToolTip": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Program.cs",
+              "RelativeToolTip": "TodoList v.2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T08:02:42.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "TodoList v.2\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Pages\\Index.razor",
+              "RelativeToolTip": "TodoList v.2\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T08:00:24.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TodoList v.2\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TodoList v.2\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T07:58:52.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoItem.cs",
+              "DocumentMoniker": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Models\\TodoItem.cs",
+              "RelativeDocumentMoniker": "TodoList v.2\\Models\\TodoItem.cs",
+              "ToolTip": "C:\\Users\\MartyianI\\source\\repos\\TodoList v.2\\TodoList v.2\\Models\\TodoItem.cs",
+              "RelativeToolTip": "TodoList v.2\\Models\\TodoItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T07:57:13.67Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

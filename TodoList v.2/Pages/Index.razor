@@ -1,0 +1,202 @@
+﻿@page "/"
+@using TodoList_v._2.Data;
+@using TodoList_v._2.Models;
+@using Microsoft.EntityFrameworkCore
+@using System.Collections.Generic
+@inject ApplicationDbContext DbContext
+
+<style>
+    .todo-app {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .todo-header {
+        text-align: center;
+        color: #3498db;
+        margin-bottom: 20px;
+    }
+
+    .todo-input {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+        .todo-input input {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #3498db;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .todo-input button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .todo-input button:hover {
+                background-color: #2980b9;
+            }
+
+    .todo-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .todo-item {
+        background-color: #f9f9f9;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+        .todo-item:hover {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .todo-item.completed {
+            background-color: #e8f5e9;
+        }
+
+    .todo-checkbox {
+        margin-right: 10px;
+    }
+
+    .todo-title {
+        flex-grow: 1;
+    }
+
+        .todo-title.completed {
+            text-decoration: line-through;
+            color: #7f8c8d;
+        }
+
+    .todo-dates {
+        font-size: 12px;
+        color: #7f8c8d;
+    }
+
+    .todo-remove {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .todo-remove:hover {
+            background-color: #c0392b;
+        }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .todo-item {
+        animation: fadeIn 0.3s ease-out;
+    }
+</style>
+
+<div class="todo-app">
+    <h1 class="todo-header">My Todo List</h1>
+
+    <div class="todo-input">
+        <input @bind="newTodo" placeholder="What needs to be done?" />
+        <button @onclick="AddTodo">Add Todo</button>
+    </div>
+
+    <ul class="todo-list">
+        @foreach (var todo in todos)
+        {
+            <li class="todo-item @(todo.IsDone ? "completed" : "")">
+                <div>
+                    <input type="checkbox" class="todo-checkbox" checked="@todo.IsDone" @onchange="@(e => UpdateTodo(todo, e))" />
+                    <span class="todo-title @(todo.IsDone ? "completed" : "")">@todo.Title</span>
+                </div>
+                <div>
+                    <span class="todo-dates">
+                        Created: @todo.CreatedDate.ToShortDateString()
+                        @if (todo.IsDone)
+                        {
+                            <span> | Completed: @todo.CompletedDate?.ToShortDateString()</span>
+                        }
+                    </span>
+                    <button class="todo-remove" @onclick="@(() => RemoveTodo(todo))">Remove</button>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
+
+@code {
+    private List<TodoItem> todos = new List<TodoItem>();
+    private string newTodo;
+
+    protected override async Task OnInitializedAsync()
+    {
+        todos = await DbContext.TodoItems.ToListAsync();
+    }
+
+    private async Task AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            var todo = new TodoItem
+                {
+                    Title = newTodo,
+                    IsDone = false,
+                    CreatedDate = DateTime.Now
+                };
+            DbContext.TodoItems.Add(todo);
+            await DbContext.SaveChangesAsync();
+            todos.Add(todo);
+            newTodo = string.Empty;
+        }
+    }
+
+    private async Task UpdateTodo(TodoItem todo, ChangeEventArgs e)
+    {
+        todo.IsDone = (bool)e.Value;
+        if (todo.IsDone)
+        {
+            todo.CompletedDate = DateTime.Now;
+        }
+        else
+        {
+            todo.CompletedDate = null;
+        }
+        DbContext.Update(todo);
+        await DbContext.SaveChangesAsync();
+    }
+
+    private async Task RemoveTodo(TodoItem todo)
+    {
+        DbContext.TodoItems.Remove(todo);
+        await DbContext.SaveChangesAsync();
+        todos.Remove(todo);
+    }
+}
